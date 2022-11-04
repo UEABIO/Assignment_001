@@ -1,0 +1,188 @@
+---
+title: 'Autumn Summative 2022'
+author: 'Lecturer: Philip Leftwich, Module: UEA BIO 5023Y'
+output: 
+  rmdformats::material
+  
+
+      
+ 
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(kableExtra)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1. Outline
+
+```{r, echo=FALSE}
+knitr::kable(rbind(
+                    c("Module code","5023Y"),
+                    c("Item number", "002"),
+                    c("Data visualisation", "Brief write-up"),
+                    c("Weighting", "40% of module"))) %>% kable_styling("striped", full_width=F) 
+
+```
+
+
+You are being provided with a fake dataset on COVID-19 linelist data^[A line list is a table that contains key information about each case in an outbreak, with each row representing a case and each column representing a variable such as demographic, clinical and epidemiologic information (e.g., risk factors and exposures)(https://www.cdc.gov/csels/dsepd/ss1978/lesson2/section1.html)]. As a group you must submit a report that uses this data to create an outbreak situation report (maximum two pages) that addresses any topics or trends that you deem relevant to inform an audience of public health and medical responders. 
+
+
+# 2. Summative guidance
+
+- This assessment is due **on or before: 3pm Thursday 16th December.**
+
+- Produce ONE incredible data figure! 
+
+- Write 500 words to accompany these figures explaining how they conform to good data visualisation practice.
+
+## Guidance on project management
+
+- Set up your RStudio Project in the **5023Y workspace**
+
+- Organise your project
+
+- Start by working in an R script build your script as you go - you can edit and change as you progress - make regular commits to GitHub
+
+- **Always** end a session by pushing *to* Github. **Always** start a session by pulling *from* GitHub. 
+
+- *Read this* on [workflow](https://r4ds.had.co.nz/workflow-projects.html)
+
+- Make sure all required libraries are called *first* in the script
+
+    - library() *goes in the script*
+
+    - install.packages("") *NEVER goes in the script*
+
+
+- Data tidying - check file has imported correctly, is there missing data? are there missing values? is it tidy? Are the data types correct? 
+
+- Try exploratory visuals to *understand* the data
+
+- Use the R script you have made as a source for an Rmarkdown file
+
+
+## Guidance on data visuals
+
+This is **not** a figure in a lab report - so titles, annotations, labelling, highlights etc. are all perfectly valid if they enhance the figure. This is a stand-alone piece, imagine you might present this on a poster, or use it as an information post on Instagram!
+
+* It should have a clear take-home message, remember titles and short captions are often the most well retained part of a data visual, so make this count!
+
+* This is for a general audience, so consider the types of geoms you will use *carefully*
+
+* Don't overload the graph with too much information
+
+* Focus on how you will make the important elements of the chart standout - colour, annotations, etc?
+
+* Get inspired - here are some useful links - but do your own research - be inspired by others and imitate!
+    (https://medium.economist.com/charting-new-territory-7f5afb293270)
+    (https://www.consultantsmind.com/2019/11/09/economist-graphs/)
+
+* Use colour - but be responsible and make it accessible
+
+
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/choose-chart.png")
+```
+
+## Guidance on write-up
+
+The write-up is not about the message behind the visual. Instead I want 500 words on the decisions you made in constructing your visual. 
+
+* Explain the chart type, and why it is appropriate
+
+* Explain any data ordering, scaling or data manipulation
+
+* Explain your use of colours or annotations
+
+* Explain why your title or captions are appropriate
+
+There are plenty of references available to you - make sure you evidence your statements with citations (reference list does not count to word count)
+
+
+# 3. Hand in
+
+The following should be part of your final project:
+
+- An R script (with code comments) which succesfully reproduces the figure. 
+
+- A saved png file of your ggplot data visual
+
+- An Rmd file that sources your data visual and where you will include your 500 word write-up and references
+
+- A knitted pdf output of your .rmd file. **This is the file you will hand in via Blackboard.**
+
+- **HAND IN – Thursday 16th DECEMBER**
+
+
+# 4. Regulations and extensions
+
+You should be familiar with University Regulations on:
+
+- [Plagiarism](https://my.uea.ac.uk/departments/learning-and-teaching/students/academic-cycle/regulations-and-discipline/plagiarism-awareness)
+
+- How to submit work to [Blackboard](https://my.uea.ac.uk/departments/learning-technology/students/submitting-an-assignment)
+
+- [Submission regulations](https://my.uea.ac.uk/departments/learning-and-teaching/students/academic-cycle/coursework/submission-guide) (Including information on word counts and late penalties)
+
+- [Extenuating Circumstances](https://my.uea.ac.uk/departments/learning-and-teaching/students/support/extenuating-circumstances) If you need help meeting your deadlines.
+  
+  
+# 5. Marking guide
+
+```{r, echo=FALSE}
+knitr::kable(rbind(
+                    c("Project structure",
+                      "No source code provided/ or what has been provided is full of errors and incapable of running", 
+                      "Barely satisfactory level of reproducibiliy, demonstrates little understanding of good project structure, code is present but little to no annotation and does not run without extensive debugging", 
+                      "Fair level. There may be little to no code annotation, some significant omissions or errors in code structure", 
+                      "Good level of project structure, shows good understanding of coding, all code runs without debugging, may have some omissions in data tidying, or conversely may include some unnecessary packages or functions", 
+                      "Produces a fully reproducible Markdown file, shows a good understanding of streamlining code to produce the necessary lines to import, check and tidy data, demonstrates a good understanding of project organisation and tidy code, has evidence of iterative development with multiple commits", 
+                      "Excellent level of research, excellent understanding of data reproducibility, tidy data, tidy code and project organisation with good use of folders to organise project. GitHub commit messages are insightful and useful. Accompanying data such as README files fully explain the project"),
+                    
+                    c("Good Plot", 
+                      "Very basic visual, poor quality", 
+                      "Plot quality is variable, lacks clarity and contains significant errors", 
+                      "Good plot, perhaps resembling a manuscript figure too much, lack of extended description, or use of visualisation tools such as colour contrast or annotation to enhance the message. Data visual choices may be too technical", 
+                      "High quality data visualisation, accurate and clear, demonstrates use of colour or annotations to enhance the message to good effect - take home message is clear", 
+                      "Very high quality data visual, all aspects of visualisation clearly demonstrated - use of appropriate colour, annotation, titles and captions which clearly impart the message, attractive data visualisation", 
+                      "As 70s, demonstrates a strong understanding of data visualisation rules, evidence of original thinking to generate an accurate and visually attractive graph"),
+
+                    c("Writing", 
+                      "No discussion",
+                      "Hard to follow and ideas are poorly formed and do not link together", 
+                      "Disjointed or too brief, but some discussion is still clear", 
+                      "Reads well, information and ideas are discussed well, one or two references", 
+                      "Interesting to read and flows well, evidence of thoughtful evaluation with multiple references to back up data visualisation choices", 
+                      "Very clear and easy to read. Shows highly original thinking and well-researched evidence to back up points")),
+              caption = 'Marking criteria',
+              col.names = c("Area", "<40%", "40-49", "50-59", "60-70", "70-79", "80+"),
+  booktabs = TRUE
+) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+  
+
+```
+
+
+
+# 6. Help
+
+- Try google and the helpful links in Essential Reading *first*
+
+- Check the discussion board on **Yammer** and/or start a thread
+
+
+## Essential reading
+
+- [Rstudio cheatsheets](https://rstudio.com/resources/cheatsheets/)
+
+- [Beautiful plotting in R - Cedric Scherer](https://cedricscherer.netlify.app/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
+
+- [Fundamentals of Data Vizualization - Claus Wilke](https://clauswilke.com/dataviz/)
+
+- [The GGplot2 book](https://ggplot2-book.org/)
+
+- [From Data to Viz](https://www.data-to-viz.com/)
