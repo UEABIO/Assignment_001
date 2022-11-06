@@ -27,28 +27,33 @@ knitr::kable(rbind(
 ```
 
 
-You are being provided with a fake dataset on COVID-19 linelist data^[A line list is a table that contains key information about each case in an outbreak, with each row representing a case and each column representing a variable such as demographic, clinical and epidemiologic information (e.g., risk factors and exposures)(https://www.cdc.gov/csels/dsepd/ss1978/lesson2/section1.html)]. As a group you must submit a report that uses this data to create an outbreak situation report (maximum two pages) that addresses any topics or trends that you deem relevant to inform an audience of public health and medical responders. 
+You are being provided with a fake dataset on COVID-19 linelist data^[A line list is a table that contains key information about each case in an outbreak, with each row representing a case and each column representing a variable such as demographic, clinical and epidemiologic information (e.g. risk factors and exposures)(https://www.cdc.gov/csels/dsepd/ss1978/lesson2/section1.html)]. As a group you must submit a report that uses this data to create an outbreak situation report (maximum two pages) that addresses any topics or trends that you deem relevant to inform an audience of public health and medical responders. 
 
 
 # 2. Summative guidance
 
-- This assessment is due **on or before: 3pm Thursday 16th December.**
+- This assessment is due **on or before: 3pm 15th December.**
 
-- Produce ONE incredible data figure! 
+- You will work in groups of three to produce your situational report. Using the data provided to draw insights into topics or trends of interest to public health and medical officials and communicate these clearly to the intended audience
 
-- Write 500 words to accompany these figures explaining how they conform to good data visualisation practice.
+- Produce ONE incredible data figure per person - these may contain annotations, labels, arrows if they aid communication.
+
+- Include any necessary explanatory text to accompany your report.
+
 
 ## Guidance on project management
 
-- Set up your RStudio Project in the **5023Y workspace**
+- Decide on your group membership, designate one person as project co-ordinator.
 
-- Organise your project
+- To avoid Git conflicts - each person should work on their *own* R scripts, with one person assembling the final report, one person organising the README etc. (with input from the whole group).
+
+- Each set up your own RStudio Project in the **5023Y workspace**
 
 - Start by working in an R script build your script as you go - you can edit and change as you progress - make regular commits to GitHub
 
-- **Always** end a session by pushing *to* Github. **Always** start a session by pulling *from* GitHub. 
+- The **best** way to avoid merge conflicts is to **Always** start a session by pulling *from* GitHub, and **Always** end a session by pushing *to* Github.
 
-- *Read this* on [workflow](https://r4ds.had.co.nz/workflow-projects.html)
+- *Read this* on workflow^[(https://r4ds.had.co.nz/workflow-projects.html)]
 
 - Make sure all required libraries are called *first* in the script
 
@@ -59,9 +64,15 @@ You are being provided with a fake dataset on COVID-19 linelist data^[A line lis
 
 - Data tidying - check file has imported correctly, is there missing data? are there missing values? is it tidy? Are the data types correct? 
 
-- Try exploratory visuals to *understand* the data
+- Each R file can have its own tidying script, or you can agree on a common pipeline to be used by all. 
 
-- Use the R script you have made as a source for an Rmarkdown file
+- Work together to explore the data and agree on insights/topics for communication
+
+- Each R script you have made can be used as a source file for an Rmarkdown file.
+
+- Clearly indicate which member of the group produced each data visual
+
+- Please indicate whether you wish to be marked for the report as a whole, or for figures to be marked individually.
 
 
 ## Guidance on data visuals
@@ -76,9 +87,7 @@ This is **not** a figure in a lab report - so titles, annotations, labelling, hi
 
 * Focus on how you will make the important elements of the chart standout - colour, annotations, etc?
 
-* Get inspired - here are some useful links - but do your own research - be inspired by others and imitate!
-    (https://medium.economist.com/charting-new-territory-7f5afb293270)
-    (https://www.consultantsmind.com/2019/11/09/economist-graphs/)
+* Get inspired here are some useful links - but do your own research - be inspired by others and imitate^[(https://medium.economist.com/charting-new-territory-7f5afb293270) (https://www.consultantsmind.com/2019/11/09/economist-graphs/)]!!
 
 * Use colour - but be responsible and make it accessible
 
@@ -106,15 +115,15 @@ There are plenty of references available to you - make sure you evidence your st
 
 The following should be part of your final project:
 
-- An R script (with code comments) which succesfully reproduces the figure. 
+- R scripts (with code comments) which successfully reproduces the figures in the reports. 
 
-- A saved png file of your ggplot data visual
+- A saved png file of your ggplot data visuals
 
-- An Rmd file that sources your data visual and where you will include your 500 word write-up and references
+- An Rmd file that sources your data visual and where you will include your write-up and any suitable references
 
-- A knitted pdf output of your .rmd file. **This is the file you will hand in via Blackboard.**
+- A knitted **pdf** output of your .rmd file. **This is the file you will hand in via Blackboard.**
 
-- **HAND IN – Thursday 16th DECEMBER**
+- **HAND IN - 15th DECEMBER**
 
 
 # 4. Regulations and extensions
@@ -142,7 +151,7 @@ knitr::kable(rbind(
                       "Produces a fully reproducible Markdown file, shows a good understanding of streamlining code to produce the necessary lines to import, check and tidy data, demonstrates a good understanding of project organisation and tidy code, has evidence of iterative development with multiple commits", 
                       "Excellent level of research, excellent understanding of data reproducibility, tidy data, tidy code and project organisation with good use of folders to organise project. GitHub commit messages are insightful and useful. Accompanying data such as README files fully explain the project"),
                     
-                    c("Good Plot", 
+                    c("Good Plots", 
                       "Very basic visual, poor quality", 
                       "Plot quality is variable, lacks clarity and contains significant errors", 
                       "Good plot, perhaps resembling a manuscript figure too much, lack of extended description, or use of visualisation tools such as colour contrast or annotation to enhance the message. Data visual choices may be too technical", 
@@ -172,7 +181,7 @@ knitr::kable(rbind(
 
 - Try google and the helpful links in Essential Reading *first*
 
-- Check the discussion board on **Yammer** and/or start a thread
+- Check the discussion board and/or start a thread
 
 
 ## Essential reading
