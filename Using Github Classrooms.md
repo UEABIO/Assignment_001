@@ -22,7 +22,7 @@ If you see that other teams show up in this screen, check if one of those includ
 
 ![][2]
 
-[2]: images/settingupteamrepos_githubclassroom/2-create-your-team.png
+[2]: [images/settingupteamrepos_githubclassroom/2-create-your-team.png](https://github.com/datajournalists/djspring17/blob/master/images/1-get-the-team-repository-link-and-sign-in-github.png)
 
 ## 3. You are ready  :sparkles:  :muscle:
 
