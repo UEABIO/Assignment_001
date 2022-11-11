@@ -1,4 +1,4 @@
-# Using Github Classroom to set up your Team Story Assignments Repository
+# Using Github Classroom to set up your Team Assignments Repository
 
 [Github Classroom](https://classroom.github.com/classrooms) allows teachers to create individual assignments and group assignments that can be given to teams of students, to work on them in private or public repositories (in our case: private).
 
