@@ -19,11 +19,11 @@ If you see that other teams show up in this screen, check if one of those includ
 
 ![][1]
 
-[1]: [images/teams.png)
+[1]: [teams.png)
 
 ![][2]
 
-[2]: [images/accepted.png)
+[2]: [accepted.png)
 
 
 
@@ -33,7 +33,7 @@ You will get a confirmation message. Click on the assignment link.
 
 ![][3]
 
-[3]: images/waiting.png
+[3]: waiting.png
 
 ## 4. Get cracking! Work on your team repository now  :fist: :pencil:
 
@@ -46,6 +46,6 @@ Your instructors will be added automatically to the repository and will be able 
 
 ![][4]
 
-[4]: images/ready.png
+[4]: ready.png
 
 Happy data analysis  :mag_right:
