@@ -19,11 +19,11 @@ If you see that other teams show up in this screen, check if one of those includ
 
 ![][1]
 
-[1]: [teams.png)
+[1]: teams.png
 
 ![][2]
 
-[2]: [accepted.png)
+[2]: accepted.png
 
 
 
